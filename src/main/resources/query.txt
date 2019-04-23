@@ -1,0 +1,45 @@
+INSERT INTO offer_mgmt.bank (bank_id, bank_name)
+   VALUES
+   ( 1,'SBI');
+INSERT INTO offer_mgmt.bank (bank_id, bank_name)
+   VALUES
+   ( 2,'HDFC');
+INSERT INTO offer_mgmt.bank (bank_id, bank_name)
+   VALUES
+   ( 3,'ICICI');
+INSERT INTO offer_mgmt.bank (bank_id, bank_name)
+   VALUES
+   ( 4,'HSBC');
+INSERT INTO offer_mgmt.bank (bank_id, bank_name)
+   VALUES
+   ( 5,'AXIS');
+
+
+
+
+INSERT INTO offer_mgmt.Debit_card ( id,card_number,card_holder_name,card_company,card_type,expiration_date,verification_date,bank_id)
+   VALUES
+   
+( 1,1234567891234567,'John','SBI','global','2025-05-06','036',1);
+INSERT INTO offer_mgmt.Debit_card ( id,card_number,card_holder_name,card_company,card_type,expiration_date,verification_date,bank_id)
+   VALUES
+   
+( 2,0000000000000001,'Dave','SBI','classic','2025-05-06','025',1);
+INSERT INTO offer_mgmt.Debit_card ( id,card_number,card_holder_name,card_company,card_type,expiration_date,verification_date,bank_id)
+   VALUES
+   
+( 3,0000000000000002,'Joe','HDFC','gold','2025-05-06','005',3);
+INSERT INTO offer_mgmt.Debit_card ( id,card_number,card_holder_name,card_company,card_type,expiration_date,verification_date,bank_id)
+   VALUES
+   
+( 4,0000000000000003,'Joey','ICICI','business','2025-05-06','063',3);
+
+
+offer_name,offer_type,offer_code,offer_desc,debitcard_id
+
+INSERT INTO offer_mgmt.offer(id,offer_name,offer_type,offer_code,offer_desc,debitcard_id)
+values(1,'festive','cashback','CASH200','Cash back of 200 bucks',1)
+INSERT INTO offer_mgmt.offer(id,offer_name,offer_type,offer_code,offer_desc,debitcard_id)
+values(2,'festive','redeem points','redeem','1 redeem points per 100 bucks',1)
+INSERT INTO offer_mgmt.offer(id,offer_name,offer_type,offer_code,offer_desc,debitcard_id)
+values(3,'endsale','cashback','END300','Cash back of 200 bucks',2)
